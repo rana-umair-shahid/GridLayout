@@ -6,12 +6,12 @@ void main() => runApp(MaterialApp(home: GridLayout()));
 
 class GridLayout extends StatelessWidget {
   List<String> events = [
-        "Calendar",
-        "Family",
-        "Friends",
-        "Lovely",
-        "Me",
-        "Team"
+    "Calendar",
+    "Family",
+    "Friends",
+    "Lovely",
+    "Me",
+    "Team",
   ];
 
   @override
@@ -54,11 +54,13 @@ class GridLayout extends StatelessWidget {
     String img = "";
     if (title == "Calendar")
       img = "assets/calendar.png";
-    else if (title == "Family") img = "assets/family_time.png";
-    if (title == "Friends")
-      img = "assets/Friends.png";
-    else if (title == "Lovely") img = "assets/lovely_time.png";
-    if (title == "Me")
+    else if (title == "Family")
+      img = "assets/family_time.png";
+    else if (title == "Friends")
+      img = "assets/friends.png";
+    else if (title == "Lovely")
+      img = "assets/lovely_time.png";
+    else if (title == "Me")
       img = "assets/me_time.png";
     else
       img = "assets/team_time.png";
